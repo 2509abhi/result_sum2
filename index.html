@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      background-color: aliceblue;
+    }
+    h2{
+      font-family: hankon;
+      src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+      font-size: 40px;
+    }
+    main{
+      background-color: aliceblue;
+      justify-content: center;
+      text-align: center;
+      margin: 0;
+    }
+    a{
+      text-decoration-line: none;
+    }
+    .row{
+      display: flex;
+      border-radius: 30px;
+      background-color: #fff;
+      height: 500px;
+      width: 750px;
+      margin: 80px auto 0 auto;
+
+    }
+    .right{
+      background-color: #2F58CD;
+      border-radius: 30px;
+      height: 500px;
+      width: 350px;
+      color: #fff;
+      
+    }
+    .h31{
+      margin: 30px;
+      color: rgb(226, 223, 223);
+    }
+    .p1{
+      padding: 10px 10px;
+      margin: 0 50px;
+      color: rgb(226, 223, 223);
+    }
+    .circle{
+      border-radius: 100%;
+      background-image: linear-gradient(#3d66d4,#3d66d4,#0333b4);
+      padding: 3rem;
+      width: 100px;
+      height: 100px;
+      margin: 30px auto;
+    }
+    .ss{
+      font-size: 70px;
+      padding: 0;
+      margin: 10px;
+    }
+    .left{
+      height: 500px;
+      width: 350px;
+    }
+    .divi{
+      display: inline-block;
+      border-radius: 20px;
+      margin: 20px 40px;
+      text-align: center;
+      width: 300px;
+      padding: 10px 20px;
+      
+    }
+    .divi2{
+      display: inline;
+      color: grey;
+      
+    }
+    .coh4{
+      padding: 1.9rem;
+      padding-left: .5rem;
+      padding-right: 4rem;
+    }
+    .reac{
+      background-color: rgb(255, 241, 241);
+    }
+    .reac1{
+      color:red; 
+    }
+    .memo{
+      background-color: rgb(250, 244, 212);
+    }
+    .memo1{
+      color:gold; 
+    }
+    .verb{
+      background-color: rgb(218, 250, 218);
+    }
+    .verb1{
+      color:green; 
+    }
+    .visual{
+      background-color: rgb(236, 236, 255);
+      
+    }
+    .visual1{
+      color:blue;
+    }
+    .sum{
+      text-align: left;
+      padding-left: 1rem ;
+      margin: 10px 0;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .btn{
+      background-color: #000c2c;
+      border-radius: 25px;
+      color: #fff;
+      padding: 10px 20%;
+    }
+    .btn:hover{
+      background-color: #3795BD;
+      color: #fff;
+
+    }
+  </style>
+</head>
+<body>
+  <main id ="body">
+    <div class="row">
+    <div class="col-lg-6 right">
+      <h3 class="h31">Your Result</h3>
+      <div class="circle">
+        <p class="ss">76</p>
+        <p>of 100</p></div>
+      <h2>Great</h2>
+      <p class="p1">You scored higher than 65% of the people who have taken these tests.</p>
+    </div>
+    <div class="col-lg-6 left">
+      <h3 class="sum">Summary</h3>
+      <div class="reac divi">
+        <img class ="divi2" src="assets/images/icon-reaction.svg" alt="Reaction image">
+        <h4 class ="divi2 coh4 reac1">Reaction</h4>
+        <p class ="divi2"><strong>80</strong>/ 100</p>
+      </div>
+      <div class="memo divi">
+        <img class ="divi2" src="assets/images/icon-memory.svg" alt="memo image">
+        <h4 class ="divi2 coh4 memo1">Memory</h4>
+        <p class ="divi2"><strong>92</strong>/ 100</p>
+        
+      </div>
+      <div class="verb divi">
+        <img class ="divi2" src="assets/images/icon-verbal.svg" alt="Verbal image">
+        <h4 class ="divi2 coh4 verb1">Verbal</h4>
+        <p class ="divi2"><strong>61</strong>/ 100</p>
+        
+      </div>
+      <div class="visual divi">
+        <img class ="divi2" src="assets/images/icon-visual.svg" alt="visual image">
+        <h4 class ="divi2 coh4 visual1">Visual</h4>
+        <p class ="divi2"><strong>72</strong>/ 100</p>
+
+      </div>
+      <a class="btn" href="#">Continue</a>
+    </div>
+  </div>
+  <div class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Abhishek Bansal</a>.</p>
+  </div>
+</main>
+</body>
+</html>
